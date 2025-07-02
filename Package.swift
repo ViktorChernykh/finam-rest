@@ -11,11 +11,11 @@ let package = Package(
         .library(name: "FinamRest", targets: ["FinamRest"]),
     ],
     dependencies: [
-		.package(name: "RequestModel", path: "../request-model"),
+		.package(url: "https://github.com/ViktorChernykh/request-model", from: "0.0.1"),
 	],
     targets: [
         .target(name: "FinamRest", dependencies: [
-			.product(name: "RequestModel", package: "RequestModel"),
+			.product(name: "RequestModel", package: "request-model"),
 		]),
     ]
 )
