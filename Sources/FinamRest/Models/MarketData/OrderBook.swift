@@ -36,7 +36,7 @@ public struct OrderBook: Codable, Sendable {
 		public enum CodingKeys: String, CodingKey, Sendable {
 			case price
 			case sellSize = "sell_size"
-			case buySize  = "buy_size"
+			case buySize = "buy_size"
 			case action
 			case mpid
 			case timestamp
@@ -45,9 +45,9 @@ public struct OrderBook: Codable, Sendable {
 		/// Action for the level.
 		public enum Action: Int, Codable, Sendable {
 			case unspecified = 0
-			case remove		 = 1
-			case add		 = 2
-			case update		 = 3
+			case remove = 1
+			case add = 2
+			case update = 3
 		}
 
 		// MARK: - Init

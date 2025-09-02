@@ -23,8 +23,8 @@ public struct Longable: Codable, Sendable {
 
 	/// Status of long operations.
 	public enum Status: Int8, Codable, Sendable {
-		case notAvailable		= 0
-		case available			= 1
+		case notAvailable = 0
+		case available = 1
 		case accountNotApproved = 2
 	}
 

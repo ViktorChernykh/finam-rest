@@ -12,8 +12,8 @@ public enum SideType: Int, Codable, Sendable {
 	case unspecified = 0	// SIDE_UNSPECIFIED
 
 	/// Long position side.
-	case buy = 1			// SIDE_BUY
+	case buy		 = 1	// SIDE_BUY
 
 	/// Short position side.
-	case sell = 2			// SIDE_SELL
+	case sell		 = 2	// SIDE_SELL
 }

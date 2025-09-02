@@ -34,9 +34,9 @@ public struct Option: Codable, Sendable {
 	public enum CodingKeys: String, CodingKey, Sendable {
 		case symbol
 		case type
-		case contractSize  = "contract_size"
+		case contractSize = "contract_size"
 		case tradeFirstDay = "trade_first_day"
-		case tradeLastDay  = "trade_last_day"
+		case tradeLastDay = "trade_last_day"
 		case strike
 		case multiplier
 	}
@@ -44,8 +44,8 @@ public struct Option: Codable, Sendable {
 	/// Option type.
 	public enum OptionType: Int8, Codable, Sendable {
 		case unspecified = 0
-		case call		 = 1
-		case put		 = 2
+		case call = 1
+		case put = 2
 	}
 
 	// MARK: - Init

@@ -20,6 +20,4 @@ public struct GoogleInterval: Codable, Sendable {
 		self.start = start
 		self.end = end
 	}
-
-
 }

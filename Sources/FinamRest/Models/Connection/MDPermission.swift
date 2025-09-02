@@ -29,7 +29,7 @@ public struct MDPermission: Codable, Sendable {
 
 	// MARK: - CodingKeys
 	public enum CodingKeys: String, CodingKey, Sendable {
-		case quoteLevel   = "quote_level"
+		case quoteLevel = "quote_level"
 		case delayMinutes = "delay_minutes"
 		case mic
 		case country

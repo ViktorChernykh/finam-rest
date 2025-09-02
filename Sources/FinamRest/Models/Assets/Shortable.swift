@@ -23,11 +23,11 @@ public struct Shortable: Codable, Sendable {
 
 	/// Status of short operations.
 	public enum Status: Int8, Codable, Sendable {
-		case notAvailable		= 0
-		case available			= 1
-		case htb				= 2
+		case notAvailable = 0
+		case available = 1
+		case htb = 2
 		case accountNotApproved = 3
-		case availableStrategy	= 4
+		case availableStrategy = 4
 	}
 
 	// MARK: - Init

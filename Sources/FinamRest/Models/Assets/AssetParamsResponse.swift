@@ -39,13 +39,13 @@ public struct AssetParamsResponse: Codable, Sendable {
 	// MARK: - CodingKeys
 	public enum CodingKeys: String, CodingKey, Sendable {
 		case symbol
-		case accountId       = "account_id"
+		case accountId = "account_id"
 		case tradeable
 		case longable
 		case shortable
-		case longRiskRate    = "long_risk_rate"
-		case longCollateral  = "long_collateral"
-		case shortRiskRate   = "short_risk_rate"
+		case longRiskRate = "long_risk_rate"
+		case longCollateral = "long_collateral"
+		case shortRiskRate = "short_risk_rate"
 		case shortCollateral = "short_collateral"
 	}
 
