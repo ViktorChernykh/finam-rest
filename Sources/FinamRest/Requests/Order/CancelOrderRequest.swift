@@ -7,13 +7,14 @@
 
 import Foundation
 import RequestModel
+import Vapor
 
 /// Cancellation of the exchange order.
 public struct CancelOrderRequest: RequestProtocol {
 	public let path: String
 
-	public let requestType: RequestMethod = .DELETE
-	public let contentType: ContentType = .json
+	public let requestType: HTTPMethod = .DELETE
+	public let contentType: HTTPMediaType = .json
 	public let cachePolicy: CachePolicy = .useNoStoreNoCache
 
 	public var headers: [(String, String)] = .init()

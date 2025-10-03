@@ -7,18 +7,19 @@
 
 import Foundation
 import RequestModel
+import Vapor
 
 /// Getting information about the session token.
 public struct PostTokenDetailsRequest: RequestProtocol {
 	public let path: String
 
-	public let requestType: RequestMethod = .POST
-	public let contentType: ContentType = .json
+	public let requestType: HTTPMethod = .POST
+	public let contentType: HTTPMediaType = .json
 	public let cachePolicy: CachePolicy = .useNoStoreNoCache
 
 	public var headers: [(String, String)] = .init()
 	public let queries: [String: String] = [:]
-	public let body: (any Codable)?
+	public let body: (any Content)?
 
 	public var decoding: String.Encoding = .utf8
 	public var repeatIfBadResponse: UInt8 = 1

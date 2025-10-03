@@ -7,13 +7,14 @@
 
 import Foundation
 import RequestModel
+import Vapor
 
 /// Getting information about a specific instrument.
 public struct GetAssetRequest: RequestProtocol {
 	public let path: String
 
-	public let requestType: RequestMethod = .GET
-	public let contentType: ContentType = .json
+	public let requestType: HTTPMethod = .GET
+	public let contentType: HTTPMediaType = .json
 	public let cachePolicy: CachePolicy = .useNoStoreNoCache
 
 	public var headers: [(String, String)] = .init()

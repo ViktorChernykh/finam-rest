@@ -6,9 +6,11 @@
 //
 
 import struct Foundation.Decimal
+import RequestModel
+import Vapor
 
 /// Information about the order.
-public struct Order: Codable, Sendable {
+public struct Order: Content {
 	// MARK: Properties
 
 	/// Account ID.
