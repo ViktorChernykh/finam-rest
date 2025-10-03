@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "FinamRest", targets: ["FinamRest"]),
     ],
     dependencies: [
-		.package(url: "https://github.com/ViktorChernykh/request-model", from: "0.0.1"),
+		.package(url: "https://github.com/ViktorChernykh/request-model", from: "0.1.0"),
 	],
     targets: [
         .target(name: "FinamRest", dependencies: [

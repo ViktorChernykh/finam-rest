@@ -5,8 +5,10 @@
 //  Created by Victor Chernykh on 12.06.2025.
 //
 
+import RequestModel
+
 /// Request for obtaining JWT token.
-public struct AuthRequest: Codable, Sendable {
+public struct AuthRequest: Content {
 	// MARK: Properties
 
 	/// API secret key provided by Finam.

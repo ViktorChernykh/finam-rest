@@ -5,8 +5,10 @@
 //  Created by Victor Chernykh on 12.06.2025.
 //
 
+import Vapor
+
 /// Request for token details.
-public struct TokenDetailsRequest: Codable, Sendable {
+public struct TokenDetailsRequest: Content {
 	// MARK: Properties
 
 	/// JWT token to inspect.

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import RequestModel
+import Vapor
 
 /// Submitting an exchange order.
 public struct PlaceOrderRequest: RequestProtocol {
@@ -18,7 +18,7 @@ public struct PlaceOrderRequest: RequestProtocol {
 
 	public var headers: [(String, String)] = .init()
 	public let queries: [String: String] = [:]
-	public let body: (any Codable)?
+	public let body: (any Content)?
 
 	public var decoding: String.Encoding = .utf8
 	public var repeatIfBadResponse: UInt8 = 1
